@@ -1,4 +1,5 @@
 import React from 'react';
+import {NavLink} from 'react-router-dom';
 
 const Navbar = () => {
     return (
@@ -10,9 +11,9 @@ const Navbar = () => {
     <button className="bg-lime-500 hover:bg-lime-600 text-white font-bold py-2 px-4 border border-blue-700 rounded absolute right-3">
   Login
 </button>
-			<a href="index.html" className="flex ml-0 ">
+			<NavLink to="/" className="flex ml-0 ">
 				<span className=" text-4xl  font-semibold whitespace-nowrap text-blue-700">FameVest</span>
-			</a>
+			</NavLink>
 			<div className="flex md:order-2">
 				<button type="button" data-collapse-toggle="mobile-menu-3" aria-controls="mobile-menu-3"
 					aria-expanded="false"
@@ -74,12 +75,10 @@ const Navbar = () => {
 				<ul
 					className="  flex flex-col mt-4 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium p-2 pl-10 w-full relative right-40">
 					<li>
-						<a href="#" className="
+						<NavLink to="/docs" className="
 						dropdown-toggle
 				dropdown-toggle
-				
-
-	bg-transparent 
+				bg-transparent 
 	text-white 
 	font-semibold 
 	hover:text-white 
@@ -92,10 +91,10 @@ const Navbar = () => {
 				ease-in-out
 				flex
 				items-center
-				text-xl" aria-current="page">Docs</a>
+				text-xl" aria-current="page">Docs</NavLink>
 					</li>
 					<li>
-						<a href="#" className="block 
+						<NavLink to="/features" className="block 
 						dropdown-toggle
 				dropdown-toggle
 				
@@ -113,10 +112,10 @@ const Navbar = () => {
 				ease-in-out
 				flex
 				items-center
-				text-xl">Features</a>
+				text-xl">Features</NavLink>
 					</li>
 					<li>
-						<a href="#" className="
+						<NavLink to="/trends" className="
 						dropdown-toggle
 				dropdown-toggle
 				
@@ -134,7 +133,7 @@ const Navbar = () => {
 				ease-in-out
 				flex
 				items-center
-				text-xl">Trends</a>
+				text-xl">Trends</NavLink>
 					</li>
 					<li>
 						<div className="flex justify-center">
